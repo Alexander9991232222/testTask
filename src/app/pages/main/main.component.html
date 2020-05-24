@@ -1,0 +1,11 @@
+<div class="container" *ngIf="isLoadData">
+    <app-table 
+    [dataSource]="dataSource"
+    [displayedColumns]="displayedColumns"
+    [totalRow]="totalRow"
+    ></app-table>
+    <app-pie-chart
+    [pieChartData]="pieChartData"
+    [pieChartLabels]="pieChartLabels"
+    ></app-pie-chart>
+</div>
